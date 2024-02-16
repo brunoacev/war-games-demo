@@ -17,7 +17,7 @@ export const Footer = () => {
         <Link
           href={"https://brunoacev-dev.vercel.app/"}
           target="_blank"
-          className="px-3 py-2 bg-zinc-100 dark:bg-zinc-700 text-zinc-50 rounded-sm font-semibold text-sm hover:cursor-pointer hover:bg-red-500 dark:hover:bg-red-500 transition-all duration-300 ease-in-out"
+          className="px-3 py-2 bg-zinc-100 text-zinc-600 hover:text-zinc-50 dark:bg-zinc-700 dark:text-zinc-50 rounded-sm font-semibold text-sm hover:cursor-pointer hover:bg-red-500 dark:hover:bg-red-500 transition-all duration-300 ease-in-out"
         >
           Develop by brunoacev-dev
         </Link>
