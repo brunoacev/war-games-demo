@@ -1,3 +1,9 @@
+import { Introduction } from "@/components/homepage/introduction";
+
 export default function Home() {
-  return <h1>War Games Demo</h1>;
+  return (
+    <main className="h-full w-full grid place-items-center gap-4">
+      <Introduction />
+    </main>
+  );
 }
