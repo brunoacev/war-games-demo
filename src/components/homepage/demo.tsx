@@ -1,13 +1,21 @@
 "use client";
 
+import useWindowDimensions from "@/hooks/useWindowDimensions";
 import YouTube from "react-youtube";
 
 export const Demo = () => {
   const videoId = "ueV_S5If9fk";
+  const { height, width } = useWindowDimensions();
+
+  let heightVariavel = height;
+
+  if (width < 500) {
+    heightVariavel -= 200;
+  }
 
   const opts = {
-    height: "390",
-    width: "640",
+    height: heightVariavel,
+    width: width - 100,
     playerVars: {
       autoplay: 0,
     },
@@ -22,7 +30,7 @@ export const Demo = () => {
         <h3 className="tracking-wider font-medium">Veja em Ação</h3>
       </div>
 
-      <YouTube videoId={videoId} opts={opts} className="hidden" />
+      <YouTube videoId={videoId} opts={opts} />
     </section>
   );
 };
