@@ -31,7 +31,7 @@ export const Faqs = () => {
         <h3 className="tracking-wider font-medium">FAQs</h3>
       </div>
 
-      <div className="flex  flex-col gap-4">
+      <div className="flex  flex-col gap-4 px-6">
         {FaqsMessage.map((faq, idx) => (
           <FaqsCard key={idx} data={faq} />
         ))}

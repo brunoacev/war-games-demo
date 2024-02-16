@@ -36,7 +36,7 @@ export const Team = () => {
         </h3>
       </div>
 
-      <div className="flex flex-wrap gap-4 items-center justify-center">
+      <div className="flex flex-wrap gap-4 items-center justify-center px-6">
         {TeamStaff.map((team, idx) => (
           <TeamCard data={team} key={idx} />
         ))}
