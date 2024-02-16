@@ -1,4 +1,5 @@
 import { Demo } from "@/components/homepage/demo";
+import { Faqs } from "@/components/homepage/faqs";
 import { Introduction } from "@/components/homepage/introduction";
 import { Price } from "@/components/homepage/price";
 import { Team } from "@/components/homepage/team";
@@ -10,6 +11,7 @@ export default function Home() {
       <Demo />
       <Price />
       <Team />
+      <Faqs />
     </main>
   );
 }
