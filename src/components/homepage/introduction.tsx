@@ -2,7 +2,7 @@ import { CheckCheck } from "lucide-react";
 
 export const Introduction = () => {
   return (
-    <section className="flex flex-col gap-4 w-full h-fit items-center py-24 border-b-[1px] border-zinc-300 dark:border-zinc-600 ">
+    <section className="flex flex-col gap-4 w-full h-fit items-center py-24 border-b-[1px] border-zinc-300 dark:border-zinc-600">
       <h1 className="uppercase font-extrabold text-6xl">
         War <span className="text-red-500">Games</span>
       </h1>
