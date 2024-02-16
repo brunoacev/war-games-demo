@@ -30,12 +30,12 @@ export const Price = () => {
         <h2 className="tracking-widest uppercase font-semibold text-zinc-400 dark:text-zinc-600">
           Preços
         </h2>
-        <h3 className="tracking-wider font-medium">
+        <h3 className="tracking-wider font-medium text-center">
           Acompanhe os novos pacotes
         </h3>
       </div>
 
-      <div className="flex flex-col md:flex-row gap-4">
+      <div className="flex flex-col md:flex-row gap-4 px-6">
         {Products.map((product, idx) => (
           <PriceCard key={idx} data={product} />
         ))}

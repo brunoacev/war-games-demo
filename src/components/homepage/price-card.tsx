@@ -13,11 +13,13 @@ export const PriceCard = ({ data }: { data: PriceCard }) => {
   return (
     <div className="w-full max-w-sm min-h-full max-h-80 p-4 rounded-lg flex flex-col justify-between gap-4 shadow-md bg-zinc-100/50 hover:bg-zinc-50 transition-all duration-300 ease-in-out dark:bg-zinc-700/50 dark:hover:bg-zinc-700">
       <div className="flex flex-col gap-2">
-        <h3 className="text-xl font-extrabold tracking-wide">{data.title}</h3>
+        <h3 className="text-xl font-extrabold tracking-wide text-center">
+          {data.title}
+        </h3>
+        <p className="text-sm text-center">{data.description}</p>
         <span className="font-semibold tracking-wide text-md">
           R$ {data.price.toFixed(2)}
         </span>
-        <p className="text-sm">{data.description}</p>
       </div>
 
       <div>
