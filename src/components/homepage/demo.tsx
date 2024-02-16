@@ -22,7 +22,7 @@ export const Demo = () => {
         <h3 className="tracking-wider font-medium">Veja em Ação</h3>
       </div>
 
-      <YouTube videoId={videoId} opts={opts} />
+      <YouTube videoId={videoId} opts={opts} className="hidden" />
     </section>
   );
 };
