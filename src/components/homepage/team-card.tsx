@@ -10,7 +10,7 @@ export type TeamCardType = {
 
 export const TeamCard = ({ data }: { data: TeamCardType }) => {
   return (
-    <div className="w-full max-w-md flex flex-col gap-2 p-4 rounded-md shadow-md bg-zinc-50 dark:bg-zinc-700/50">
+    <div className="w-full max-w-md flex flex-col gap-2 p-4 rounded-md shadow-md bg-zinc-100/50 hover:bg-zinc-50 transition-all duration-300 ease-in-out dark:hover:bg-zinc-700 dark:bg-zinc-700/50">
       <div className="flex items-center gap-4">
         <Image alt="" src={data.urlPhoto} width={50} height={50} />
         <div className="flex flex-col gap-1">
