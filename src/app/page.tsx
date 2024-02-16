@@ -1,6 +1,7 @@
 import { Demo } from "@/components/homepage/demo";
 import { Introduction } from "@/components/homepage/introduction";
 import { Price } from "@/components/homepage/price";
+import { Team } from "@/components/homepage/team";
 
 export default function Home() {
   return (
@@ -8,6 +9,7 @@ export default function Home() {
       <Introduction />
       <Demo />
       <Price />
+      <Team />
     </main>
   );
 }
