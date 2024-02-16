@@ -28,25 +28,27 @@ const urlLinks: UrlLink[] = [
 ];
 
 const Bar = () => {
-  return <div className="h-5 w-[1px] bg-zinc-400" />;
+  return <div className="h-[1px] w-full md:h-5 md:w-[1px] bg-zinc-400" />;
 };
 
 export const NavigationLinks = () => {
   return (
-    <div>
-      <ul className="flex items-center gap-2 h-fit w-full">
-        {urlLinks.map((url) => (
-          <li key={url.id}>
-            <Link href={url.urlPath} className="text-sm font-semibold">
-              {url.title}
-            </Link>
-          </li>
-        ))}
-        <Bar />
+    <ul className="flex flex-col items-start md:flex-row md:items-center gap-2 h-fit w-full">
+      {urlLinks.map((url) => (
+        <li key={url.id}>
+          <Link href={url.urlPath} className="text-sm font-semibold">
+            {url.title}
+          </Link>
+        </li>
+      ))}
+      <Bar />
+      <div className="w-full flex justify-center">
         <ThemeToggle />
-        <Bar />
+      </div>
+      <Bar />
+      <div className="w-full flex justify-center">
         <SocialLinks />
-      </ul>
-    </div>
+      </div>
+    </ul>
   );
 };
