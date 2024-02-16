@@ -11,26 +11,17 @@ type UrlLink = {
 const urlLinks: UrlLink[] = [
   {
     id: 1,
-    title: "Sobre",
-    urlPath: "/about",
-  },
-  {
-    id: 2,
     title: "Guias",
     urlPath: "/guides",
   },
+
   {
-    id: 3,
-    title: "Sobre",
-    urlPath: "/about",
-  },
-  {
-    id: 4,
+    id: 2,
     title: "Comunidade",
     urlPath: "/community",
   },
   {
-    id: 5,
+    id: 3,
     title: "Download",
     urlPath: "/download",
   },

@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export const Footer = () => {
   return (
-    <footer className="flex flex-col gap-4  w-full  h-fit items-center py-5  border-b-[1px] border-zinc-300 dark:border-zinc-600 text-sm">
+    <footer className="flex flex-col gap-4  w-full  h-fit items-center py-5  border-t-[1px] border-zinc-300 dark:border-zinc-600 text-sm">
       <div className="flex gap-4">
         <span>Copyright &copy; 2023 War Games Contributors</span>
         <span>Released under the MIT License.</span>
