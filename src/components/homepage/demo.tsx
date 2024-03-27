@@ -10,11 +10,11 @@ export const Demo = () => {
   let heightVariavel = height;
 
   if (width < 500) {
-    heightVariavel -= 200;
+    heightVariavel -= 300;
   }
 
   const opts = {
-    height: heightVariavel,
+    height: heightVariavel - 100,
     width: width - 100,
     playerVars: {
       autoplay: 0,
