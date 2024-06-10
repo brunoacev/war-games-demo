@@ -55,7 +55,7 @@ export const Price = () => {
         </h3>
       </div>
 
-      <div className="grid place-items-center grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 px-4 w-full">
+      <div className="grid place-items-center grid-cols-1 gap-6 md:grid-cols-2 xl:grid-cols-3 px-4 w-full m-auto">
         {Products.map((product, idx) => (
           <PriceCard key={idx} data={product} />
         ))}
